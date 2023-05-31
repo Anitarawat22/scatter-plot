@@ -1,0 +1,41 @@
+1.importing matplotlib and give alsies as mp 
+import matplotlib as mp
+
+2.importing  pyplot for plotting the values as plt from matplotlib
+from matplotlib import pyplot as plt
+
+assign two(x,y) values between 1-9 
+
+x = [3,6,8,3,5,7,9,1,4,6,8,4]
+y = [3,5,6,8,1,9,2,7,9,3,5,7]
+
+
+---->scatter will help to plot the values 
+     plt.scatter(x,y)
+
+
+--->you can use grid()
+    plt.grid()
+    
+  
+---> you can use  s = 100 to bold the values
+     plt.scatter(x,y,s = 100)
+     
+---->  you can use color as c and assign any color also ypu can use hex value
+     plt.scatter(x,y,s = 100,c ='yellow')
+     
+----> you can use marker 
+     plt.scatter(x,y,s = 100,c ='yellow',marker = 'x')
+     
+--->adding edges
+    plt.scatter(x,y,s = 100,edgecolor = 'pink')
+    
+----> adding mutliple colors
+
+    plt.scatter(x,y,s = 100,c = colors,edgecolor = 'pink')
+  
+----> adding color bars
+
+     plt.scatter(x,y,s = 100,c = colors,edgecolor = 'pink')
+     cbar = plt.colorbar()
+     cbar.set_label('satisfication')
